@@ -24,7 +24,7 @@ def list_reqs(fname='requirements.txt'):
 # Load the package's VERSION file as a dictionary.
 about = {}
 ROOT_DIR = Path(__file__).resolve().parent
-PACKAGE_DIR = ROOT_DIR / 'feature_engine'
+PACKAGE_DIR = ROOT_DIR / 'mlshark'
 with open(PACKAGE_DIR / "VERSION") as f:
     _version = f.read().strip()
     about["__version__"] = _version

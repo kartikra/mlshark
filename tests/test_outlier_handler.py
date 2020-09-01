@@ -23,6 +23,7 @@ def test_Windsorizer(dataframe_normal_dist, dataframe_na, dataframe_vartypes):
     assert transformer.fold == 1
     # fit params
     assert transformer.right_tail_caps_ == {'var': 0.10727677848029868}
+    # assert round(transformer.right_tail_caps_['var'], 8) == round(0.10727677848029868, 8)
     assert transformer.left_tail_caps_ == {}
     assert transformer.input_shape_ == (100, 1)
     # transform params
